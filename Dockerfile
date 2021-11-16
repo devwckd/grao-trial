@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM gradle:4.7.0-jdk8-alpine AS build
+FROM gradle:7.3.0-jdk8-alpine AS build
 COPY --chown=gradle:gradle . /grao-trial-build
 WORKDIR /grao-trial-build
 RUN gradle build --no-daemon
